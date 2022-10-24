@@ -43,7 +43,7 @@ namespace msi_projekt1
 
             if (buttonTag == answerC)
             {
-                score += 4;       
+                score += 3;       
             }
 
             if(questionNumber == totalQuestions)
@@ -62,38 +62,38 @@ namespace msi_projekt1
             switch (number) 
             {
                 case 1:
-                    question.Text = "Pytanie 1";
-                    button1.Text = "Odpowiedz a";
-                    button2.Text = "Odpowiedz b";
-                    button3.Text = "Odpowiedz c";
+                    question.Text = "Pytanie 1: \n Ile godzin dziennie spędzasz przy komputerze?";
+                    button1.Text = "Odpowiedz A: 0 - 2h";
+                    button2.Text = "Odpowiedz B: 2 - 5h";
+                    button3.Text = "Odpowiedz C: +5h";
                     break;
 
                 case 2:
-                    question.Text = "Pytanie 2";
-                    button1.Text = "Odpowiedz a";
-                    button2.Text = "Odpowiedz b";
-                    button3.Text = "Odpowiedz c";
+                    question.Text = "Pytanie 2: \n Na co przeznaczasz czas przy komputerze";
+                    button1.Text = "Odpowiedz A: Praca";
+                    button2.Text = "Odpowiedz B: Nauka";
+                    button3.Text = "Odpowiedz C: Rozrywka";
                     break;
 
                 case 3:
-                    question.Text = "Pytanie 3";
-                    button1.Text = "Odpowiedz a";
-                    button2.Text = "Odpowiedz b";
-                    button3.Text = "Odpowiedz c";
+                    question.Text = "Pytanie 3: \n Jak reagujesz gdy ktoś odciąga Cie od komputera?";
+                    button1.Text = "Odpowiedz A: Odchodzę bez problemu";
+                    button2.Text = "Odpowiedz B: Ociągam się ale odchodzę";
+                    button3.Text = "Odpowiedz C: Bardzo się denerwuję";
                     break;
 
                 case 4:
-                    question.Text = "Pytanie 4";
-                    button1.Text = "Odpowiedz a";
-                    button2.Text = "Odpowiedz b";
-                    button3.Text = "Odpowiedz c";
+                    question.Text = "Pytanie 4: \n Czy potrafisz znaleźć sobie inne zajęcie gdy nie masz dostępu do komputera?";
+                    button1.Text = "Odpowiedz A: Bardzo czeęsto i bez problemu";
+                    button2.Text = "Odpowiedz B: Nie zawsze";
+                    button3.Text = "Odpowiedz C: Nigdy";
                     break;
 
                 case 5:
-                    question.Text = "Pytanie 5";
-                    button1.Text = "Odpowiedz a";
-                    button2.Text = "Odpowiedz b";
-                    button3.Text = "Odpowiedz c";
+                    question.Text = "Pytanie 5: \n Czy zdarza Ci się nie robić jakieś ważnej rzeczy np. odrobić zadanie domowe?";
+                    button1.Text = "Odpowiedz A: Nie, nigdy";
+                    button2.Text = "Odpowiedz B: Tak, czasami";
+                    button3.Text = "Odpowiedz C: Tak, bardzo często";
                     break;
             }
 
@@ -105,25 +105,25 @@ namespace msi_projekt1
             {
                 MessageBox.Show(
                     "Quiz zakończony!" + Environment.NewLine +
-                    "Wyswietlam wariant 1" + Environment.NewLine +
+                    "Nie jesteś uzależniony. Gratulacje!" + Environment.NewLine +
                     "Wcisnij OK aby zagrać ponownie"
                     );
             }
 
-            if (score >= 10 && score < 20)
+            if (score >= 10 && score < 15)
             {
                 MessageBox.Show(
                     "Quiz zakończony!" + Environment.NewLine +
-                    "Wyswietlam wariant 2" + Environment.NewLine +
+                    "Jesteś uzależniony w niewielkim stopniu. Popracuj nad sobą!" + Environment.NewLine +
                     "Wcisnij OK aby zagrać ponownie"
                     );
             }
 
-            if (score >= 20)
+            if (score >= 15)
             {
                 MessageBox.Show(
                     "Quiz zakończony!" + Environment.NewLine +
-                    "Wyswietlam wariant 3" + Environment.NewLine +
+                    "Jesteś uzależniony. Natychmiast zacznij zmieniać swoje nawyki!" + Environment.NewLine +
                     "Wcisnij OK aby zagrać ponownie"
                     );
             }
